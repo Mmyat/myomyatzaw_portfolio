@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1a1a29;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.btn1 {
+  background: #7562e0;
+  border-radius: 8px;
+  padding: 10px 30px;
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn1:hover {
+  background: white;
+  color: #7562e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.outline {
+  outline-color: #7562e0;
 }
 
-.card {
-  padding: 2em;
+.outline:hover {
+  outline-color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.skills:first-child {
+  background: #7562e0;
+}
+
+.skills:first-child:hover {
+  background: #bdbdbd;
+}
+.service-card {
+  width: auto;
+  height: 338px;
+  background: transparent;
+  border: 3px solid #7562e0;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+}
+
+.service-card:nth-child(even){
+  border: 3px solid white;
+}
+
+.service-card:hover{
+  border-color: deepskyblue;
 }
