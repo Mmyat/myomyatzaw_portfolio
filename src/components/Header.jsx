@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   BookOpenIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import { Link, ScrollLink } from "react-scroll";
-import profileImage from "../assets/MyImage.jpg";
+import profileImage from "../assets/icons/my_logo.jpg";
 const Header = () => {
   let Links = [
     { name: "Home", link: "home" },
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-          <img src={profileImage} alt="Profile Picture" className="rounded-full w-12 h-12 mr-1 border-1"/>
+          <img src={profileImage} alt="Profile Picture" className="text-white rounded-full w-12 h-12 mr-1 border-1"/>
           <span className="text-primary hover:text-white">Myo Myat Zaw</span>
         </div>
         {/* Menu icon */}

@@ -1,5 +1,3 @@
-import React from "react";
-import facebook from "../assets/socials/facebook.png";
 import github from "../assets/socials/github.svg";
 import linkedin from "../assets/socials/linkedin.svg";
 import email from "../assets/socials/sms.png";

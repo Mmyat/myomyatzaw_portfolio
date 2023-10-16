@@ -1,24 +1,20 @@
-import React from "react";
-
 const Projects = () => {
   const projects = [
     {
-      title: "TWINDER",
+      title: "ONLINE SHOP",
       description:
         "A live Geolocation app for finding tweets and twitter users around you.",
-      photo: "/src/assets/projects/img1.png",
+      photo: "/src/assets/projects/ecommerce_web.PNG",
+      link: "https://mmyat-online-shop.netlify.app/",
+      source_code: "https://github.com/Mmyat/ecommerce_app",
     },
     {
-      title: "LIVENTS",
+      title: "CONTACTLIST NOTE",
       description:
         "A video streaming app with live Geolocation, for streaming events.",
-      photo: "/src/assets/projects/img2.png",
-    },
-    {
-      title: "MOOVE",
-      description:
-        "Mobile app for booking instant pickup & dropoff accross major cities.",
-      photo: "/src/assets/projects/img3.png",
+      photo: "/src/assets/projects/contact_web.PNG",
+      link: "https://mmyat-contactlist-note.netlify.app/",
+      source_code: "https://github.com/Mmyat/LocalContact-Web",
     },
   ];
   return (
@@ -51,12 +47,16 @@ const Projects = () => {
               </h3>
               <p className=" text-white mt-1">{project.description}</p>
               <div className="flex mt-5">
-                <button className="btn transition-all duration-500 text-sm md:text-lg bg-primary py-2 px-6 rounded text-white hover:bg-white hover:text-primary">
-                  Demo
-                </button>
-                <button className="btn outline text-sm md:text-lg py-1 px-6 rounded border-none ml-5 text-white ">
-                  Source Code
-                </button>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <button className="btn transition-all duration-500 text-sm md:text-lg bg-primary py-2 px-6 rounded text-white hover:bg-white hover:text-primary">
+                    Demo
+                  </button>
+                </a>
+                <a href={project.source_code} target="_blank" rel="noreferrer">
+                  <button className="btn outline text-sm md:text-lg py-1 px-6 rounded border-none ml-5 text-white ">
+                    Source Code
+                  </button>
+                </a>
               </div>
             </div>
           );

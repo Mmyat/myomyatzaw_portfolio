@@ -42,7 +42,7 @@ const Home = () => {
                   Contact Me
                 </button>
               </Link>
-              <a href="https://drive.google.com/drive/my-drive" target="_blank" rel="noreferrer">
+              <a href="https://drive.google.com/file/d/181gt4yNnfHgr4ZmVzMBYP5HwLjTF_iKc/view?ts=652caea2" target="_blank" rel="noreferrer">
                 <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
                   Download CV
                 </button>
