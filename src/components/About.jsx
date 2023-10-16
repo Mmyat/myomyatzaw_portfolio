@@ -1,14 +1,12 @@
-import React from "react";
 import Services from "./Services";
-
 const About = () => {
   const skills = [
-    { name: "UI & UX DESIGNING", image: "/src/assets/icons/ruler-pen.png" },
-    { name: "FRONTEND WEB DEVELOPMENT", image: "/src/assets/icons/code.png" },
-    { name: "BACKEND WEB DEVELOPMENT", image: "/src/assets/icons/code.png" },
+    { name: "UI & UX DESIGNING", image: "/src/assets/ruler-pen.png" },
+    { name: "FRONTEND WEB DEVELOPMENT", image: "/src/assets/code.png" },
+    { name: "BACKEND WEB DEVELOPMENT", image: "/src/assets/code.png" },
   ];
   return (
-    <div className="md:px-10 px-7 sm:-mt-24" id="about">
+    <div className="md:px-10 px-7 md:mt-36 mt-24" id="about">
       <h1 className="text-primary font-semibold text-3xl mt-16">About me:</h1>
       <p className="my-3 text-white md:w-2/3 leading-[2]">
         Hi, my name is Myo Myat Zaw, i am a Fullstack web developer. I have honed my skills in Web

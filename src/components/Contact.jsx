@@ -1,7 +1,7 @@
-import github from "../assets/socials/github.svg";
-import linkedin from "../assets/socials/linkedin.svg";
-import email from "../assets/socials/sms.png";
-import telegram from "../assets/socials/telegram.svg";
+import github from "../assets/github.svg";
+import linkedin from "../assets/linkedin.svg";
+import email from "../assets/sms.png";
+import telegram from "../assets/telegram.svg";
 
 const Contact = () => {
   return (

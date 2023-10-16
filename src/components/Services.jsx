@@ -1,7 +1,4 @@
-import React from 'react';
-
 import services from '../../public/services.js';
-
 const Services = () => {
     return (
         <div>

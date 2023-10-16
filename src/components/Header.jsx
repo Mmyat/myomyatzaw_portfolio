@@ -1,11 +1,10 @@
 import { useState } from "react";
 import {
-  BookOpenIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { Link, ScrollLink } from "react-scroll";
-import profileImage from "../assets/icons/my_logo.jpg";
+import { Link} from "react-scroll";
+import profileImage from "../assets/my_icon.jpg";
 const Header = () => {
   let Links = [
     { name: "Home", link: "home" },
@@ -16,7 +15,7 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full max-w-7xl fixed top-0 left-0 right-0">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">

@@ -4,7 +4,7 @@ const Projects = () => {
       title: "ONLINE SHOP",
       description:
         "A live Geolocation app for finding tweets and twitter users around you.",
-      photo: "/src/assets/projects/ecommerce_web.PNG",
+      photo: "/src/assets/ecommerce_web.PNG",
       link: "https://mmyat-online-shop.netlify.app/",
       source_code: "https://github.com/Mmyat/ecommerce_app",
     },
@@ -12,7 +12,7 @@ const Projects = () => {
       title: "CONTACTLIST NOTE",
       description:
         "A video streaming app with live Geolocation, for streaming events.",
-      photo: "/src/assets/projects/contact_web.PNG",
+      photo: "/src/assets/contact_web.PNG",
       link: "https://mmyat-contactlist-note.netlify.app/",
       source_code: "https://github.com/Mmyat/LocalContact-Web",
     },

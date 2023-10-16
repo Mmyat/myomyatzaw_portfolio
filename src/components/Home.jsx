@@ -1,4 +1,3 @@
-import React from "react";
 import me from "../assets/me.png";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
@@ -23,7 +22,7 @@ const Home = () => {
                   strings: [
                     "I'm an enthusiast Full-Stack 🌐developer",
                     "I studied 4th yr EC 👨‍🎓 at TU(Monywa)",
-                    "You can 📲 me through discord or ✉️",
+                    "You can 📲 me through telegram or ✉️",
                   ],
                   delay: 150,
                   pauseFor: 1500,
@@ -32,10 +31,6 @@ const Home = () => {
                 }}
               />
             </p>
-            {/* <p className="md:w-96">
-              Freelance UI designer, Fullstack developer, & Data Miner. I create
-              seamless web experiences for end-users.
-            </p> */}
             <div className="mt-10">              
               <Link to="contact" smooth={true} spy={true}>
                 <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
@@ -55,8 +50,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className='h-24 bg-[#181824] w-full mx-auto absolute left-0 hidden md:block'>
-            </div> */}
     </div>
   );
 };
