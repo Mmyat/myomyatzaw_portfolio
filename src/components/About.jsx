@@ -1,9 +1,11 @@
 import Services from "./Services";
+import ruler_pen from "../assets/ruler-pen.png";
+import code from "../assets/code.png";
 const About = () => {
   const skills = [
-    { name: "UI & UX DESIGNING", image: "/src/assets/ruler-pen.png" },
-    { name: "FRONTEND WEB DEVELOPMENT", image: "/src/assets/code.png" },
-    { name: "BACKEND WEB DEVELOPMENT", image: "/src/assets/code.png" },
+    { name: "UI & UX DESIGNING", image: ruler_pen },
+    { name: "FRONTEND WEB DEVELOPMENT", image: code },
+    { name: "BACKEND WEB DEVELOPMENT", image: code },
   ];
   return (
     <div className="md:px-10 px-7 md:mt-36 mt-24" id="about">

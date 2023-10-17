@@ -1,10 +1,12 @@
+import online_shop from "../assets/ecommerce_web.jpg";
+import contact_note from "../assets/contact_web.jpg"
 const Projects = () => {
   const projects = [
     {
       title: "ONLINE SHOP",
       description:
         "A live Geolocation app for finding tweets and twitter users around you.",
-      photo: "/src/assets/ecommerce_web.PNG",
+      photo: online_shop,
       link: "https://mmyat-online-shop.netlify.app/",
       source_code: "https://github.com/Mmyat/ecommerce_app",
     },
@@ -12,7 +14,7 @@ const Projects = () => {
       title: "CONTACTLIST NOTE",
       description:
         "A video streaming app with live Geolocation, for streaming events.",
-      photo: "/src/assets/contact_web.PNG",
+      photo: contact_note,
       link: "https://mmyat-contactlist-note.netlify.app/",
       source_code: "https://github.com/Mmyat/LocalContact-Web",
     },
