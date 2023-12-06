@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-  background: #1a1a29;
+  /* background: #1a1a29; */
+  background: #e3f6f5;
 }
 
 .btn1 {
-  background: #7562e0;
+  background: #68d4c9;
   border-radius: 8px;
   padding: 10px 30px;
   color: white;
@@ -13,11 +14,11 @@ body {
 
 .btn1:hover {
   background: white;
-  color: #7562e0;
+  color: #68d4c9;
 }
 
 .outline {
-  outline-color: #7562e0;
+  outline-color: #68d4c9;
 }
 
 .outline:hover {
@@ -25,7 +26,7 @@ body {
 }
 
 .skills:first-child {
-  background: #7562e0;
+  background: #68d4c9;
 }
 
 .skills:first-child:hover {
@@ -35,7 +36,7 @@ body {
   width: auto;
   height: 338px;
   background: transparent;
-  border: 3px solid #7562e0;
+  border: 3px solid #68d4c9;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
   border-radius: 16px;
 }

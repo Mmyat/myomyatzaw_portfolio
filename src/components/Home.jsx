@@ -4,14 +4,19 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
-      className="md:px-10 px-7 py-4 my-12 md:h-screen bg-[#1a1a29]"
+      className="w-full h-screen bg-cover md:px-10 px-7 mt-12 py-4 md:h-screen"
       id="home"
     >
-      <div>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+      {/* style={{ backgroundImage: `url(${bg_img})` }} */}
+      <div className="mt-12">
+        <div className="flex flex-col md:flex-row items-center w-full">
           {/* image & content */}
+          {/* img */}
+          <div className="order-first md:order-first mr-10 relative">
+            <img src={me} className="w-60 h-60" alt="" />
+          </div>
           {/* text */}
-          <div className="text-white">
+          <div className="text-gray-900">
             <h6 className='text-3xl mt-12'>Hello, I'm</h6>
             <h1 className="font-semibold md:text-5xl my-4 text-3xl">
               Myo Myat Zaw
@@ -43,10 +48,6 @@ const Home = () => {
                 </button>
               </a>
             </div>
-          </div>
-          {/* img */}
-          <div className="order-first md:order-last relative">
-            <img src={me} className="w-60 h-60" alt="" />
           </div>
         </div>
       </div>
