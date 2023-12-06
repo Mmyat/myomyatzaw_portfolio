@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "ONLINE SHOP",
       description:
-        "A live Geolocation app for finding tweets and twitter users around you.",
+        "Online shop website to buy clothes,jewelers and electronic acessories.",
       photo: online_shop,
       link: "https://mmyat-online-shop.netlify.app/",
       source_code: "https://github.com/Mmyat/ecommerce_app",
@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "CONTACTLIST NOTE",
       description:
-        "A video streaming app with live Geolocation, for streaming events.",
+        "Contact note website to note our friends and familiy.",
       photo: contact_note,
       link: "https://mmyat-contactlist-note.netlify.app/",
       source_code: "https://github.com/Mmyat/LocalContact-Web",
