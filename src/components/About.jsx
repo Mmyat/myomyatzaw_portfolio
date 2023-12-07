@@ -1,4 +1,3 @@
-import Services from "./Services";
 import ruler_pen from "../assets/ruler-pen.png";
 import code from "../assets/code.png";
 const About = () => {
@@ -28,9 +27,6 @@ const About = () => {
           </div>
         ))}
       </div>
-
-      {/* services section */}
-      <Services/>
     </div>
   );
 };

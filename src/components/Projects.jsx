@@ -24,7 +24,7 @@ const Projects = () => {
       <h1 className="text-primary font-semibold text-3xl mt-28">
         Created Projects:
       </h1>
-      <p className="my-3 text-white md:w-3/4 leading-[2]">
+      <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">
         I have created many projects over the course of being a Web Developer
       </p>
       {/* featured projects */}
@@ -55,7 +55,7 @@ const Projects = () => {
                   </button>
                 </a>
                 <a href={project.source_code} target="_blank" rel="noreferrer">
-                  <button className="btn outline text-sm md:text-lg py-1 px-6 rounded border-none ml-5 text-white ">
+                  <button className="btn outline text-sm md:text-lg py-2 px-6 rounded border-none ml-5 text-white ">
                     Source Code
                   </button>
                 </a>
