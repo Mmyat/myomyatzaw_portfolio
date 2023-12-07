@@ -18,7 +18,7 @@ const Contact = () => {
           </p>
           {/* social icons */}
           <div className="flex ">
-            <a href="https://www.linkedin.com/in/mmyat-mmyat-92a795182/" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/myo.myat.31542841/" target="_blank" rel="noreferrer">
               <img className="rounded-lg" 
                 style={{
                   width: "32px",
