@@ -1,10 +1,24 @@
+import { useRef } from 'react';
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg";
 import email from "../assets/mail.svg";
 import telegram from "../assets/telegram.svg";
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_h00z8g8', 'template_jn2y1nk', form.current, '9WdP69qN8ZkGq1S5n')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+      setReply("Thanks, I will reply as soon as possible^^")
+  };
+
   return (
     <div className="md:px-10 px-7 my-10" id="contact">
       <div className="flex flex-col md:flex-row">
@@ -73,7 +87,7 @@ const Contact = () => {
           <p className="mt-16 text-gray-900 text-2xl mb-6">
             Contact me, let's make magic together
           </p>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
               name="name"
@@ -94,7 +108,7 @@ const Contact = () => {
               className="bg-white py-3 px-3 md:w-3/4 w-full rounded mb-2"
               placeholder="Message:"
             ></textarea>
-            <button className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
+            <button type="submit" className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
               Send
             </button>
           </form>
