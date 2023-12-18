@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row">
         {/* text and icons */}
         <div className="md:w-1/2">
-          <h1 className="text-gray-900 font-semibold text-3xl mt-16">
+          <h1 className="text-headline font-semibold text-3xl mt-16">
             Connect with me:
           </h1>
           <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">

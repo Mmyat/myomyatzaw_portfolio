@@ -18,7 +18,7 @@ const Home = () => {
           {/* text */}
           <div className="text-gray-900">
             <h6 className='text-3xl mt-12'>Hello, I'm</h6>
-            <h1 className="font-semibold md:text-5xl my-4 text-3xl">
+            <h1 className="font-semibold md:text-4xl my-4 text-3xl">
               Myo Myat Zaw
             </h1>
             <p className="text-xl mt-12">
@@ -38,12 +38,12 @@ const Home = () => {
             </p>
             <div className="mt-10">              
               <Link to="contact" smooth={true} spy={true}>
-                <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
+                <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-4 rounded text-headline hover:bg-white hover:text-primary">
                   Contact Me
                 </button>
               </Link>
               <a href="https://drive.google.com/file/d/1Lpe6rEXWVdejYL30-sRwl1WyXHxOB8KO/view?usp=sharing" target="_blank" rel="noreferrer">
-                <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
+                <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-headline hover:bg-white hover:text-primary">
                   Download CV
                 </button>
               </a>

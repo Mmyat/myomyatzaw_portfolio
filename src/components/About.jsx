@@ -8,8 +8,8 @@ const About = () => {
   ];
   return (
     <div className="md:px-10 px-7 md:mt-4" id="about">
-      <h1 className="text-primary font-semibold text-3xl mt-12">About me:</h1>
-      <p className="my-3 text-gray-700 md:w-2/3 leading-[2]">
+      <h1 className="text-headline font-semibold text-3xl mt-8">About me:</h1>
+      <p className="my-3  text-gray-700 md:w-2/3 leading-[2]">
         Hi, my name is Myo Myat Zaw, i am a Fullstack web developer. I have honed my skills in Web
         Development. Here are the major skills I have.
       </p>

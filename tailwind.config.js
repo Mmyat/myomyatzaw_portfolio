@@ -10,11 +10,14 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#46dbd3',
+        primary: '#078080',
         Secondary:'#282162',
         tertiary:'#848191',
         light:'#BDBDBD',
         dark: '#000036',
+        navbar : "#8f8f8f",
+        headline: "#272343",
+        btn: "#078080",
       }
     },
   },

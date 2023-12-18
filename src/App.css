@@ -2,11 +2,11 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background: #1a1a29; */
-  background: #e3f6f5;
+  background: #fffffe;
 }
 
 .btn1 {
-  background: #68d4c9;
+  background: #078080;
   border-radius: 8px;
   padding: 10px 30px;
   color: white;
@@ -14,11 +14,12 @@ body {
 
 .btn1:hover {
   background: white;
-  color: #68d4c9;
+  color: #272343;
+  outline-color: #078080;
 }
 
 .outline {
-  outline-color: #68d4c9;
+  outline-color: #078080;
 }
 
 .outline:hover {
@@ -26,7 +27,7 @@ body {
 }
 
 .skills:first-child {
-  background: #68d4c9;
+  background: #078080;
 }
 
 .skills:first-child:hover {
@@ -36,7 +37,7 @@ body {
   width: auto;
   height: 338px;
   background: transparent;
-  border: 3px solid #68d4c9;
+  border: 3px solid #078080;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
   border-radius: 16px;
 }
