@@ -10,11 +10,16 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#46dbd3',
+        primary: '#f582ae',
+        // primary: '#FFF4F4',
         Secondary:'#282162',
         tertiary:'#848191',
-        light:'#BDBDBD',
+        light:'#fef6e4',
         dark: '#000036',
+        btntext : "#001858",
+        title : "#001858",
+        paragraph: "#172c66",
+        cardbg : "#f3d2c1"
       }
     },
   },

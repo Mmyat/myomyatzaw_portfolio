@@ -2,11 +2,12 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background: #1a1a29; */
-  background: #e3f6f5;
+  /* background: #F7F7F7; */
+  background: #fffffe;
 }
 
 .btn1 {
-  background: #68d4c9;
+  background: #F1C376;
   border-radius: 8px;
   padding: 10px 30px;
   color: white;
@@ -14,29 +15,29 @@ body {
 
 .btn1:hover {
   background: white;
-  color: #68d4c9;
+  color: #F1C376;
 }
 
 .outline {
-  outline-color: #68d4c9;
+  outline-color: #f582ae;
 }
 
 .outline:hover {
   outline-color: white;
 }
 
-.skills:first-child {
-  background: #68d4c9;
+/* .skills:first-child {
+  background: #f582ae;
 }
 
 .skills:first-child:hover {
-  background: #bdbdbd;
-}
+  background: #f3d2c1;
+} */
 .service-card {
   width: auto;
   height: 338px;
   background: transparent;
-  border: 3px solid #68d4c9;
+  border: 3px solid #fffffe;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
   border-radius: 16px;
 }
@@ -45,6 +46,6 @@ body {
   border: 3px solid white;
 }
 
-.service-card:hover{
-  border-color: deepskyblue;
-}
+/* .service-card:hover{
+  border-color: #F1C376;
+} */

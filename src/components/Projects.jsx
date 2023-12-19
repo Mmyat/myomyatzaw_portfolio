@@ -21,7 +21,7 @@ const Projects = () => {
   ];
   return (
     <div className="md:px-10 px-7 my-8" id="projects">
-      <h1 className="text-primary font-semibold text-3xl mt-28">
+      <h1 className="text-title font-semibold text-3xl mt-28">
         Created Projects:
       </h1>
       <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">
@@ -34,7 +34,7 @@ const Projects = () => {
           return (
             <div
               key={index}
-              className="flex flex-col shadow-sm md:w-[343px] bg-[#31313F] p-4 rounded"
+              className="flex flex-col shadow-sm md:w-[343px] bg-[#001858] p-4 rounded"
             >
               <a
                 href={project.photo}
@@ -44,18 +44,18 @@ const Projects = () => {
               >
                 <img src={project.photo} alt={project.title} />
               </a>
-              <h3 className="text-primary font-semibold text-lg">
+              <h3 className="text-[#fffffe] font-semibold text-lg">
                 {project.title}
               </h3>
               <p className=" text-white mt-1">{project.description}</p>
               <div className="flex mt-5">
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  <button className="btn transition-all duration-500 text-sm md:text-lg bg-primary py-2 px-6 rounded text-white hover:bg-white hover:text-primary">
+                  <button className="btn transition-all duration-500 text-sm md:text-lg bg-primary py-2 px-6 rounded text-btntext hover:text-white">
                     Demo
                   </button>
                 </a>
                 <a href={project.source_code} target="_blank" rel="noreferrer">
-                  <button className="btn outline text-sm md:text-lg py-2 px-6 rounded border-none ml-5 text-white ">
+                  <button className="btn outline text-sm md:text-lg py-2 px-6 rounded border-none ml-5 text-white hover:text-primary">
                     Source Code
                   </button>
                 </a>

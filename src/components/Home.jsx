@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
-      className="w-full h-screen bg-cover md:px-10 px-7 mt-12 py-4 md:h-screen"
+      className="w-full md:px-10 px-7 mt-12 py-4 md:h-screen"
       id="home"
     >
       {/* style={{ backgroundImage: `url(${bg_img})` }} */}
@@ -38,12 +38,12 @@ const Home = () => {
             </p>
             <div className="mt-10">              
               <Link to="contact" smooth={true} spy={true}>
-                <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
+                <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
                   Contact Me
                 </button>
               </Link>
               <a href="https://drive.google.com/file/d/1Lpe6rEXWVdejYL30-sRwl1WyXHxOB8KO/view?usp=sharing" target="_blank" rel="noreferrer">
-                <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">
+                <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
                   Download CV
                 </button>
               </a>

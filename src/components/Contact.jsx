@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row">
         {/* text and icons */}
         <div className="md:w-1/2">
-          <h1 className="text-gray-900 font-semibold text-3xl mt-16">
+          <h1 className="text-title font-semibold text-3xl mt-16">
             Connect with me:
           </h1>
           <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">
@@ -108,7 +108,7 @@ const Contact = () => {
               className="bg-white py-3 px-3 md:w-3/4 w-full rounded mb-2"
               placeholder="Message:"
             ></textarea>
-            <button type="submit" className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-white hover:bg-white hover:text-primary block">
+            <button type="submit" className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-btntext hover:text-white shadow-primary shadow-sm block">
               Send
             </button>
           </form>
