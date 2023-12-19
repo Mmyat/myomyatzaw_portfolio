@@ -15,29 +15,22 @@ body {
 
 .btn1:hover {
   background: white;
-  color: #F1C376;
+  color: #f3d2c1;
 }
 
 .outline {
-  outline-color: #f582ae;
+  outline-color: #f3d2c1;
 }
 
 .outline:hover {
   outline-color: white;
 }
 
-/* .skills:first-child {
-  background: #f582ae;
-}
-
-.skills:first-child:hover {
-  background: #f3d2c1;
-} */
 .service-card {
   width: auto;
   height: 338px;
   background: transparent;
-  border: 3px solid #fffffe;
+  border: 3px solid #f3d2c1;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
   border-radius: 16px;
 }
@@ -45,7 +38,3 @@ body {
 .service-card:nth-child(even){
   border: 3px solid white;
 }
-
-/* .service-card:hover{
-  border-color: #F1C376;
-} */

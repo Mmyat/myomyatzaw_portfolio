@@ -10,8 +10,8 @@ import Services from "./components/Services";
 function App() {
   return (
     <>
+      <Header/>
       <div className="max-w-7xl mx-auto">
-        <Header/>
         <Home/>
         <About/>
         <Services/>       

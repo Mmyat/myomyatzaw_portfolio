@@ -92,20 +92,20 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Name:"
-              className="bg-white py-3 px-3 md:w-3/4 w-full rounded "
+              className="bg-[#fff3ec] py-3 px-3 md:w-3/4 w-full rounded "
             />
             <input
               type="email"
               name="email"
               placeholder="Email:"
-              className="bg-white py-3 px-3 md:w-3/4 w-full rounded my-3"
+              className="bg-[#fff3ec] py-3 px-3 md:w-3/4 w-full rounded my-3"
             />
             <textarea
               name="message"
               id="message"
               cols="54"
               rows="4"
-              className="bg-white py-3 px-3 md:w-3/4 w-full rounded mb-2"
+              className="bg-[#fff3ec] py-3 px-3 md:w-3/4 w-full rounded mb-2"
               placeholder="Message:"
             ></textarea>
             <button type="submit" className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-btntext hover:text-white shadow-primary shadow-sm block">

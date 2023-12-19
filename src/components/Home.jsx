@@ -18,7 +18,7 @@ const Home = () => {
           {/* text */}
           <div className="text-gray-900">
             <h6 className='text-3xl mt-12'>Hello, I'm</h6>
-            <h1 className="font-semibold md:text-5xl my-4 text-3xl">
+            <h1 className="font-semibold md:text-4xl my-4 text-3xl">
               Myo Myat Zaw
             </h1>
             <p className="text-xl mt-12">
