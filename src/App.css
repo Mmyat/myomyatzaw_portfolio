@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* background: #1a1a29; */
   /* background: #F7F7F7; */
-  background: #fffffe;
+  background: #ffffff;
 }
 
 .btn1 {
@@ -30,7 +30,6 @@ body {
   width: auto;
   height: 338px;
   background: transparent;
-  border: 3px solid #f3d2c1;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
   border-radius: 16px;
 }
