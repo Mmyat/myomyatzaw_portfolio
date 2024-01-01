@@ -1,5 +1,7 @@
 import online_shop from "../assets/ecommerce_web.jpg";
 import contact_note from "../assets/contact_web.jpg"
+import { ThemeContext } from '../App'
+import {useContext} from "react";
 const Projects = () => {
   const projects = [
     {
@@ -19,12 +21,13 @@ const Projects = () => {
       source_code: "https://github.com/Mmyat/LocalContact-Web",
     },
   ];
+  const {theme} = useContext(ThemeContext);
   return (
-    <div className="md:px-10 px-7 my-8" id="projects">
-      <h1 className="text-title font-semibold text-3xl mt-28">
+    <div className="md:px-10 px-7 py-2" id="projects">
+      <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-28`}>
         Created Projects:
       </h1>
-      <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">
+      <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>
         I have created many projects over the course of being a Web Developer
       </p>
       {/* featured projects */}

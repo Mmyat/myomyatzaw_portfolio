@@ -30,7 +30,10 @@ const App=() => {
                   <span className="sr-only">Loading...</span>
               </div>
             </div>
-          ) : ( <All />)
+          ) : (
+          <div className={`${theme === "light" ? "bg-light" : "bg-dark"}`}> 
+            <All /> 
+          </div>)
         }
       </div>
     </ThemeContext.Provider>

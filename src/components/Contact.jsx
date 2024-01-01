@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { useRef,useContext } from 'react';
+import { ThemeContext } from '../App'
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg";
@@ -18,16 +19,16 @@ const Contact = () => {
       e.target.reset()
       setReply("Thanks, I will reply as soon as possible^^")
   };
-
+  const {theme} = useContext(ThemeContext);
   return (
-    <div className="md:px-10 px-7 my-10" id="contact">
+    <div className="md:px-10 px-7 my-10 py-2" id="contact">
       <div className="flex flex-col md:flex-row">
         {/* text and icons */}
         <div className="md:w-1/2">
-          <h1 className="text-title font-semibold text-3xl mt-16">
+          <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-16`}>
             Connect with me:
           </h1>
-          <p className="my-3 text-gray-900 md:w-3/4 leading-[2]">
+          <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>
             Satisfied with me? Please contact me
           </p>
           {/* social icons */}
@@ -84,7 +85,7 @@ const Contact = () => {
         </div>
         {/* form */}
         <div className="md:w-1/2">
-          <p className="mt-16 text-gray-900 text-2xl mb-6">
+          <p className={`${theme === "light" ? "text-gray-900" : "text-white"} mt-16 text-2xl mb-6`}>
             Contact me, let's make magic together
           </p>
           <form ref={form} onSubmit={sendEmail}>

@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 const All = () => {
   return (
-    <>
+    <>     
       <Header/>
       <div className="max-w-7xl mx-auto">
         <Home/>

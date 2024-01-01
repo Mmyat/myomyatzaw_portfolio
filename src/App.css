@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
-  /* background: #1a1a29; */
-  /* background: #F7F7F7; */
-  background: #ffffff;
-}
 
 .btn1 {
-  background: #F1C376;
+  background: #90b4ce;
   border-radius: 8px;
   padding: 10px 30px;
   color: white;
