@@ -17,7 +17,7 @@ const Header = () => {
   let [open, setOpen] = useState(false);
   const {theme,switchTheme} = useContext(ThemeContext)
   return (
-    <div className={`w-full ${theme === "light" ? "bg-light": "bg-dark"} fixed top-0 left-0 right-0 z-10`}>
+    <div className={`w-full ${theme === "light" ? "bg-gray-50": "bg-dark"} fixed top-0 left-0 right-0 z-10 shadow-md rounded-b-lg`}>
       <div className="flex md:flex items-center justify-between py-4 md:px-10 px-2">
         {/* logo section */}
         <div className="order-first font-bold text-2xl cursor-pointer flex items-center gap-1">

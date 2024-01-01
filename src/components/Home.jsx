@@ -41,7 +41,7 @@ const Home = () => {
             </p>
             <div className="flex mt-10">              
               <Link to="contact" smooth={true} spy={true}>
-                <button className="btn mr-2 transition-all duration-500 bg-primary py-2 px-1 md:px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
+                <button className="btn mr-2 md:mr-4 transition-all duration-500 bg-primary py-2 px-1 md:px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
                   Contact Me
                 </button>
               </Link>
