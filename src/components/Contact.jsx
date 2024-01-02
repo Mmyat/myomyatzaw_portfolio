@@ -25,6 +25,11 @@ const Contact = () => {
         title: "github",
     },
     {
+      icon: telegram,
+      link: "https://t.me/myo_myat_zaw",
+      title: "telegram",
+    },
+    {
       icon: email,
       link: "mailto:mmyathaha@gmail.com",
       title: "email",

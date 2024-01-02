@@ -14,11 +14,11 @@ export default {
         Secondary:'#282162',
         tertiary:'#848191',
         light:'#fffff',
-        dark: '#000036',
+        dark: '#2b2c34',
         btntext : "#001858",
         title : "#001858",
         paragraph: "#172c66",
-        cardbg : "#90b4ce"
+        cardbg : "#90b4ce",
       }
     },
   },

@@ -19,7 +19,7 @@ const Home = () => {
             <img src={me} className="w-60 h-60" alt="" />
           </div>
           {/* text */}
-          <div className={`${theme === "light" ? "text-primary" : "text-white"}`}>
+          <div className={`${theme === "light" ? "text-gray-900" : "text-white"}`}>
             <h6 className='text-3xl mt-12'>Hello, I'm</h6>
             <h1 className="font-semibold md:text-4xl my-4 text-3xl">
               Myo Myat Zaw
@@ -41,12 +41,12 @@ const Home = () => {
             </p>
             <div className="flex mt-10">              
               <Link to="contact" smooth={true} spy={true}>
-                <button className="btn mr-2 md:mr-4 transition-all duration-500 bg-primary py-2 px-1 md:px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
+                <button className={`${theme === "light" ? "bg-dark text-white shadow-dark" : "bg-white text-dark"} btn mr-2 md:mr-4 transition-all duration-500 py-2 px-1 md:px-4 rounded shadow-sm hover:scale-90`}>
                   Contact Me
                 </button>
               </Link>
               <a href="https://drive.google.com/file/d/1AKrNUp-jB9gxuNKbJHX1EmzZMS__jKU_/view?usp=sharing" target="_blank" rel="noreferrer">
-                <button className="btn transition-all duration-500 bg-primary py-2 px-1 md:px-4 rounded text-btntext hover:text-white shadow-primary shadow-sm">
+                <button className={`${theme === "light" ? "bg-dark text-white shadow-dark" : "bg-white text-dark"}  btn transition-all duration-500 py-2 px-1 md:px-4 rounded shadow-dark shadow-sm hover:scale-90`}>
                   Download CV
                 </button>
               </a>
