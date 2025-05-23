@@ -31,7 +31,7 @@ const App=() => {
               </div>
             </div>
           ) : (
-          <div className={`${theme === "light" ? "bg-light" : "bg-dark"}`}> 
+          <div className={`${theme === "light" ? "bg-light" : "bg-[#0b192e]"}`}> 
             <All /> 
           </div>)
         }

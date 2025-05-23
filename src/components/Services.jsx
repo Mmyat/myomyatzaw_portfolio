@@ -5,7 +5,7 @@ const Services = () => {
     const {theme} = useContext(ThemeContext);
     return (
         <div className="md:px-10 px-7 md:mt-4 py-2" id="services">
-              <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-14`}>The services I offer:</h1>
+              <h1 className="text-[#2cb67d] font-semibold text-3xl mt-12">The services I offer:</h1>
               <div className='grid md:grid-cols-3 my-8 gap-5'>
               {
                 services.map(service => <div key={service.id} className='service-card flex flex-col justify-center items-center p-6 text-center bg-white'>

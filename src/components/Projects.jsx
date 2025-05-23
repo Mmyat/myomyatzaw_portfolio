@@ -24,7 +24,7 @@ const Projects = () => {
   const {theme} = useContext(ThemeContext);
   return (
     <div className="md:px-10 px-7 py-2" id="projects">
-      <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-28`}>
+      <h1 className="text-[#2cb67d] font-semibold text-3xl mt-12">
         Created Projects:
       </h1>
       <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>

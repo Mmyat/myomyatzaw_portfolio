@@ -11,7 +11,7 @@ const About = () => {
   const {theme} = useContext(ThemeContext);
   return (
     <div className="md:px-10 px-7 md:mt-4 py-2" id="about">
-      <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-12`}>About me:</h1>
+      <h1 className="text-[#2cb67d] font-semibold text-3xl mt-12">About me:</h1>
       <p className={`${theme === "light" ? "text-gray-700" : "text-white"} my-3 md:w-2/3 leading-[2]`}>
         Hi, my name is Myo Myat Zaw, i am a Fullstack web developer. I have honed my skills in Web
         Development. Here are the major skills I have.

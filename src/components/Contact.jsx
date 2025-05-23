@@ -10,26 +10,31 @@ const Contact = () => {
   const form = useRef();
   const social = [
     {
-        icon: facebook,
-        link: "https://www.facebook.com/myo.myat.31542841/",
-        title: "facebook",
+      id: 1,
+      icon: facebook,
+      link: "https://www.facebook.com/myo.myat.31542841/",
+      title: "facebook",
     },
     {
-        icon: linkedin,
-        link: "https://www.linkedin.com/in/mmyat-mmyat-92a795182/",
-        title: "facebook",
+      id: 2,
+      icon: linkedin,
+      link: "https://www.linkedin.com/in/mmyat-mmyat-92a795182/",
+      title: "facebook",
     },
     {
-        icon: github,
-        link: "https://github.com/Mmyat",
-        title: "github",
+      id: 3,
+      icon: github,
+      link: "https://github.com/Mmyat",
+      title: "github",
     },
     {
+      id: 4,
       icon: telegram,
       link: "https://t.me/myo_myat_zaw",
       title: "telegram",
     },
     {
+      id: 5,
       icon: email,
       link: "mailto:mmyathaha@gmail.com",
       title: "email",
@@ -50,11 +55,11 @@ const Contact = () => {
   };
   const {theme} = useContext(ThemeContext);
   return (
-    <div className="md:px-10 px-7 my-10 py-2" id="contact">
-      <div className="flex flex-col md:flex-row">
+    <div className="md:px-10 px-7 py-2" id="contact">
+      <div className="flex flex-col md:flex-row mt-32">
         {/* text and icons */}
         <div className="md:w-1/2">
-          <h1 className={`${theme === "light" ? "text-primary" : "text-white"} font-semibold text-3xl mt-16`}>
+          <h1 className="text-[#2cb67d] font-semibold text-3xl mt-16">
             Connect with me:
           </h1>
           <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>
@@ -64,7 +69,7 @@ const Contact = () => {
           <div className="flex ">
             {
             social.map(social =>
-              <a href={social.link} target="_blank" rel="noreferrer">
+              <a href={social.link} key={social.id} target="_blank" rel="noreferrer">
               <img className="rounded-lg ml-4 hover:scale-125" 
                 style={{
                   width: "32px",
