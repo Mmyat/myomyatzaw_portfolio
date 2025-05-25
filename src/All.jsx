@@ -1,11 +1,12 @@
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Services from "./pages/Services";
+import WorkExperience from "./pages/WorkExperience";
 const All = () => {
   return (
     <>     
@@ -13,7 +14,7 @@ const All = () => {
       <div className="max-w-7xl mx-auto">
         <Home/>
         <About/>
-        {/* <Services/>        */}
+        <WorkExperience/>
         <Projects/>
         <Contact/>
         <Footer/>

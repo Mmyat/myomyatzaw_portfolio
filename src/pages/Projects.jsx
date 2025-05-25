@@ -37,7 +37,7 @@ const Projects = () => {
           return (
             <div
               key={index}
-              className="flex flex-col shadow-sm md:w-[343px] bg-[#001858] p-4 rounded"
+              className="flex flex-col shadow-sm md:w-[343px] bg-gray-200 dark:bg-green-800 p-4 rounded"
             >
               <a
                 href={project.photo}
@@ -47,18 +47,19 @@ const Projects = () => {
               >
                 <img src={project.photo} alt={project.title} />
               </a>
-              <h3 className="text-[#fffffe] font-semibold text-lg">
+              <h3 className="font-
+              bold text-gray-900 dark:text-gray-200 font-semibold text-lg">
                 {project.title}
               </h3>
-              <p className=" text-white mt-1">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-200 mt-1">{project.description}</p>
               <div className="flex mt-5">
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  <button className="btn transition-all duration-500 text-sm md:text-lg bg-primary py-2 px-6 rounded text-btntext hover:text-white">
+                  <button className="transition-all duration-500 text-sm md:text-lg bg-[#2cb67d] text-white py-2 px-6 rounded">
                     Demo
                   </button>
                 </a>
                 <a href={project.source_code} target="_blank" rel="noreferrer">
-                  <button className="btn outline text-sm md:text-lg py-2 px-6 rounded border-none ml-5 text-white hover:text-primary">
+                  <button className="text-sm md:text-lg py-2 px-6 rounded border-none ml-5 bg-[#2cb67d] text-white">
                     Source Code
                   </button>
                 </a>
