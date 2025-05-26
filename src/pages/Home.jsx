@@ -21,10 +21,10 @@ const Home = () => {
           {/* text */}
           <div className={`${theme === "light" ? "text-gray-700" : "text-gray-600"}`}>
             <h6 className='font-semibold text-xl text-green-400 mt-12'>Hello, I'm</h6>
-            <h1 className="font-bold md:text-4xl my-4 text-3xl">
+            <h1 className={`font-bold md:text-4xl my-4 text-3xl ${theme == "light" ? "text-gray-900" : "text-[#ccd6f6]"}`}>
               Myo Myat Zaw
             </h1>
-            <p className="text-xl mt-12">
+            <p className="text-xl mt-12 text-gray-500">
               <Typewriter
                 options={{
                   strings: [

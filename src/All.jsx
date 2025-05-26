@@ -6,6 +6,7 @@ import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
+import Skill from "./pages/Skill";
 import WorkExperience from "./pages/WorkExperience";
 const All = () => {
   return (
@@ -14,6 +15,7 @@ const All = () => {
       <div className="max-w-7xl mx-auto">
         <Home/>
         <About/>
+        <Skill/>
         <WorkExperience/>
         <Projects/>
         <Contact/>

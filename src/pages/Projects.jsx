@@ -1,6 +1,6 @@
 import online_shop from "../assets/ecommerce_web.jpg";
 import contact_note from "../assets/contact_web.jpg"
-import { ThemeContext } from '../App'
+import { ThemeContext } from '../App';
 import {useContext} from "react";
 const Projects = () => {
   const projects = [
