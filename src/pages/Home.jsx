@@ -41,7 +41,7 @@ const Home = () => {
             </p>
             <div className="flex mt-10">              
               <Link to="contact" smooth={true} spy={true}>
-                <button className={`${theme === "light" ? "bg-[#2cb67d] text-white shadow-dark" : "bg-white text-[#2cb67d] font-semibold"} btn mr-2 md:mr-4 transition-all duration-500 py-2 px-1 md:px-4 rounded shadow-sm hover:scale-90`}>
+                <button className={`${theme === "light" ? "bg-[#2cb67d] text-white shadow-dark" : "bg-white text-[#2cb67d] font-semibold"} mr-2 md:mr-4 transition-all duration-500 py-2 px-1 md:px-4 rounded shadow-sm hover:scale-90`}>
                   Contact Me
                 </button>
               </Link>

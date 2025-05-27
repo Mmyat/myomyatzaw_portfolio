@@ -36,8 +36,8 @@ const WorkExperience = () => {
             <div className="absolute flex items-center justify-center bg-green-200 dark:bg-[#8892af1a] w-8 h-8 text-gray-700 rounded-full mt-1.5 -start-3.5 border dark:border-4 dark:border-gray-900 dark:bg-gray-700">
               <AiFillCalendar />
             </div>
-            <div className="flex flex-col bg-[#8892af1a] dark:bg-green-800 mt-2 p-4 ml-2 rounded-lg">
-              <div className={`w-full flex items-center justify-between mb-2 ${theme == "light" ? "text-gray-900" : "text-white"} hover:text-blue-400 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700`}>
+            <div className="flex flex-col bg-[#8892af1a] mt-2 p-4 ml-2 rounded-lg">
+              <div className={`w-full flex items-center justify-between mb-2 ${theme == "light" ? "text-gray-900" : "text-white"} hover:text-[#2cb67d] focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700`}>
                 <time className="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">
                   {work.dateRange}
                 </time>

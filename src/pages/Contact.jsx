@@ -105,7 +105,7 @@ const Contact = () => {
               className="bg-[#fff3ec] py-3 px-3 md:w-3/4 w-full rounded mb-2"
               placeholder="Message:"
             ></textarea>
-            <button type="submit" className="btn transition-all duration-500 bg-primary py-2 px-12 rounded text-btntext hover:text-white shadow-sm block -2 rounded shadow-lg transform transition transition hover:scale-90">
+            <button type="submit" className={`bg-[#2cb67d] text-white shadow-dark transition-all duration-500 py-2 px-12 rounded text-btntext hover:text-white shadow-sm block -2 rounded shadow-lg transform transition transition hover:scale-90`}>
               Send
             </button>
           </form>

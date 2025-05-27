@@ -1,72 +1,49 @@
 import online_shop from "../assets/ecommerce_web.jpg";
-import contact_note from "../assets/contact_web.jpg"
+import contact_note from "../assets/contact_web.jpg";
 import { ThemeContext } from '../App';
-import {useContext} from "react";
+import { useContext } from "react";
+import ProjectCard from "../components/ProjectCard";
+
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
+
   const projects = [
     {
       title: "ONLINE SHOP",
-      description:
-        "Online shop website to buy clothes,jewelers and electronic acessories.",
-      photo: online_shop,
-      link: "https://mmyat-online-shop.netlify.app/",
-      source_code: "https://github.com/Mmyat/ecommerce_app",
+      description: "Online shop website to buy clothes, jewelry, and electronic accessories.",
+      image: online_shop,
+      demoLink: "https://mmyat-online-shop.netlify.app/",
+      codeLink: "https://github.com/Mmyat/ecommerce_app",
     },
     {
       title: "CONTACTLIST NOTE",
-      description:
-        "Contact note website to note our friends and familiy.",
-      photo: contact_note,
-      link: "https://mmyat-contactlist-note.netlify.app/",
-      source_code: "https://github.com/Mmyat/LocalContact-Web",
+      description: "Contact note website to note our friends and family.",
+      image: contact_note,
+      demoLink: "https://mmyat-contactlist-note.netlify.app/",
+      codeLink: "https://github.com/Mmyat/LocalContact-Web",
     },
   ];
-  const {theme} = useContext(ThemeContext);
+
   return (
-    <div className="md:px-10 px-7 py-2" id="projects">
+    <div className="flex flex-col md:px-10 px-7 py-2" id="projects">
       <h1 className="text-[#2cb67d] font-semibold text-3xl mt-12">
         Created Projects:
       </h1>
       <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>
         I have created many projects over the course of being a Web Developer
       </p>
-      {/* featured projects */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
-        {projects.map((project, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col shadow-sm md:w-[343px] bg-gray-200 dark:bg-green-800 p-4 rounded"
-            >
-              <a
-                href={project.photo}
-                target="_blank"
-                rel="noreferrer"
-                className="mb-4"
-              >
-                <img src={project.photo} alt={project.title} />
-              </a>
-              <h3 className="font-
-              bold text-gray-900 dark:text-gray-200 font-semibold text-lg">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-200 mt-1">{project.description}</p>
-              <div className="flex mt-5">
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  <button className="transition-all duration-500 text-sm md:text-lg bg-[#2cb67d] text-white py-2 px-6 rounded">
-                    Demo
-                  </button>
-                </a>
-                <a href={project.source_code} target="_blank" rel="noreferrer">
-                  <button className="text-sm md:text-lg py-2 px-6 rounded border-none ml-5 bg-[#2cb67d] text-white">
-                    Source Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          );
-        })}
+      <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-5">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            demoLink={project.demoLink}
+            codeLink={project.codeLink}
+          />
+        ))}
       </div>
     </div>
   );
