@@ -32,7 +32,6 @@ const Projects = () => {
       <p className={`${theme === "light" ? "text-gray-900" : "text-white"} my-3 md:w-3/4 leading-[2]`}>
         I have created many projects over the course of being a Web Developer
       </p>
-
       <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-5">
         {projects.map((project, index) => (
           <ProjectCard

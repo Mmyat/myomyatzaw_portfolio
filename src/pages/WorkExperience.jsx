@@ -33,7 +33,7 @@ const WorkExperience = () => {
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
         {workExpList.map((work) => (
           <li className="mb-10 ms-4" key={work.id}>
-            <div className="absolute flex items-center justify-center bg-green-200 dark:bg-[#8892af1a] w-8 h-8 text-gray-700 rounded-full mt-1.5 -start-3.5 border dark:border-4 dark:border-gray-900 dark:bg-gray-700">
+            <div className={`absolute flex items-center justify-center ${theme == "light" ? "bg-cyan-200 text-gray-600" : "bg-gray-700 text-white border border-4 border-gray-900"} w-8 h-8 rounded-full mt-1.5 -start-4`}>
               <AiFillCalendar />
             </div>
             <div className="flex flex-col bg-[#8892af1a] mt-2 p-4 ml-2 rounded-lg">

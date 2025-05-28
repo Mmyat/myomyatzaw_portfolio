@@ -5,7 +5,7 @@ import {useContext} from "react";
 const ProjectCard = ({ title, description, image, demoLink, codeLink }) => {
     const {theme} = useContext(ThemeContext);
     return (
-    <div className="relative flex flex-col shadow-md w-full md:w-[343px] bg-[#8892af1a] dark:bg-green-800 p-4 rounded group transition duration-300">
+    <div className="relative flex flex-col shadow-md w-full md:w-[343px] bg-[#8892af1a] p-4 rounded group transition duration-300">
         {/* Project image */}
         <a href={demoLink} target="_blank" rel="noreferrer" className="mb-4 block overflow-hidden rounded">
         <img
@@ -26,13 +26,13 @@ const ProjectCard = ({ title, description, image, demoLink, codeLink }) => {
         </p>
 
         {/* Buttons */}
-        <div className="absolute bottom-4 right-4 flex gap-4 opacity-0 translate-x-20 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
-        <a href={demoLink} target="_blank" rel="noreferrer" className="text-gray-500 text-xl hover:text-[#2cb67d]">
-            <TbArrowUpRight />
-        </a>
-        <a href={codeLink} target="_blank" rel="noreferrer" className="text-gray-500 text-xl hover:text-[#2cb67d]">
-            <FaGithub />
-        </a>
+        <div className="absolute bottom-32 right-8 bg-gray-300 p-2 rounded-md flex gap-4 opacity-0 translate-x-20 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">          
+            <a href={codeLink} target="_blank" rel="noreferrer" className="text-gray-500 text-xl hover:text-[#2cb67d]">
+                <FaGithub />
+            </a>
+            <a href={demoLink} target="_blank" rel="noreferrer" className="text-gray-500 text-xl hover:text-[#2cb67d]">
+                <TbArrowUpRight />
+            </a>
         </div>
     </div>
     );
