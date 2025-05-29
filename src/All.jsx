@@ -5,7 +5,6 @@ import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Services from "./pages/Services";
 import Skill from "./pages/Skill";
 import WorkExperience from "./pages/WorkExperience";
 const All = () => {
@@ -19,8 +18,8 @@ const All = () => {
         <WorkExperience/>
         <Projects/>
         <Contact/>
-        <Footer/>
       </div>
+      <Footer/>
     </>
   )
 }

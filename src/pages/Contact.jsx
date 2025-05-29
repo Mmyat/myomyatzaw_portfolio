@@ -55,7 +55,7 @@ const Contact = () => {
   };
   const {theme} = useContext(ThemeContext);
   return (
-    <div className="md:px-10 px-7 py-2" id="contact">
+    <div className="w-full h-screen md:px-10 px-7 py-2" id="contact">
       <div className="flex flex-col md:flex-row mt-32">
         {/* text and icons */}
         <div className="md:w-1/2">

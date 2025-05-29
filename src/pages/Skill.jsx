@@ -11,10 +11,12 @@ const Skill = () => {
     { name: "TypeScript", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",rating: 3 },
     { name: "Node.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",rating: 4 },
     { name: "Express.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",rating: 4 },
+    { name: "Nest.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",rating: 3 },
     { name: "MongoDB", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",rating: 4 },
     { name: "MySQL", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",rating: 4 },
     { name: "Git", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",rating: 3 },
     { name: "GitHub", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",rating: 3 },
+    { name: "Next.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",rating: 3 },
     { name: "React", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "Tailwind CSS", imageSrc: tailWind,rating: 4 },
     { name: "Bootstrap", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",rating: 3 },
@@ -31,7 +33,7 @@ const Skill = () => {
         />
       </div>
       <p className="text-gray-500 dark:text-gray-400 my-3 md:w-3/4 leading-[2]">
-        Here are some of the skills I have acquired as a Web Developer.
+        Here are some of the skills I have acquired as a Full-Stack Web Developer.
       </p>
       <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-5">
         {webSkills.map((skill, index) => (

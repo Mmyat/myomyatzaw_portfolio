@@ -7,13 +7,11 @@ const Home = () => {
   const {theme} = useContext(ThemeContext)
   return (
     <div
-      className="w-full md:px-10 px-7 mt-12 py-4 md:h-screen"
+      className="w-full md:px-10 px-7 mt-12 py-4"
       id="home"
     >
-      {/* style={{ backgroundImage: `url(${bg_img})` }} */}
       <div className="mt-12">
         <div className="flex flex-col md:flex-row items-center w-full">
-          {/* image & content */}
           {/* img */}
           <div className="order-first md:order-first mr-10 relative">
             <img src={me} className="w-60 h-60" alt="" />
@@ -24,15 +22,18 @@ const Home = () => {
             <h1 className={`font-bold md:text-4xl my-4 text-3xl ${theme == "light" ? "text-gray-900" : "text-[#ccd6f6]"}`}>
               Myo Myat Zaw
             </h1>
-            <p className="text-xl mt-12 text-gray-500">
+            <p className="text-xl font-semibold mt-12 text-gray-500">
               <Typewriter
                 options={{
                   strings: [
                     "I'm an enthusiast Full-Stack 🌐developer",
-                    "I studied 4th yr EC 👨‍🎓 at TU(Monywa)",
-                    "You can 📲 me through telegram or ✉️",
+                    "I like to build web applications 💻",
+                    "I love to learn new technologies 🚀",
+                    "I enjoy solving problems 🧩",
+                    "I am a self-taught developer 👨‍💻",
+                    "I am passionate about coding ❤️",                  
                   ],
-                  delay: 150,
+                  delay: 100,
                   pauseFor: 1500,
                   autoStart: true,
                   loop: true,
@@ -45,7 +46,7 @@ const Home = () => {
                   Contact Me
                 </button>
               </Link>
-              <a href="https://drive.google.com/file/d/1AKrNUp-jB9gxuNKbJHX1EmzZMS__jKU_/view?usp=sharing" target="_blank" rel="noreferrer">
+              <a href="/Myo Myat Zaw.pdf" target="_blank" rel="noreferrer">
                 <button className={`${theme === "light" ? "bg-[#2cb67d] text-white shadow-dark" : "bg-white text-[#2cb67d] font-semibold"}  btn transition-all duration-500 py-2 px-1 md:px-4 rounded shadow-dark shadow-sm hover:scale-90`}>
                   Download CV
                 </button>
