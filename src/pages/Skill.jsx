@@ -9,6 +9,10 @@ const Skill = () => {
     { name: "CSS", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",rating: 3 },
     { name: "JavaScript", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",rating: 5 },
     { name: "TypeScript", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",rating: 3 },
+    { name: "Next.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",rating: 3 },
+    { name: "React", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Tailwind CSS", imageSrc: tailWind,rating: 4 },
+    { name: "Bootstrap", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",rating: 3 },
     { name: "Node.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",rating: 4 },
     { name: "Express.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",rating: 4 },
     { name: "Nest.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",rating: 3 },
@@ -16,10 +20,7 @@ const Skill = () => {
     { name: "MySQL", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",rating: 4 },
     { name: "Git", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",rating: 3 },
     { name: "GitHub", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",rating: 3 },
-    { name: "Next.js", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",rating: 3 },
-    { name: "React", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { name: "Tailwind CSS", imageSrc: tailWind,rating: 4 },
-    { name: "Bootstrap", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",rating: 3 },
+    { name: "docker", imageSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",rating: 3 },
   ];
   return (
     <div id='skills' className="flex flex-col md:px-10 px-7 py-2">
