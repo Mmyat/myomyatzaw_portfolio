@@ -1,5 +1,6 @@
 import online_shop from "../assets/ecommerce_web.jpg";
 import contact_note from "../assets/contact_web.jpg";
+import movie_show from "../assets/movie_show.jpg";
 import { ThemeContext } from '../App';
 import { useContext } from "react";
 import ProjectCard from "../components/ProjectCard";
@@ -21,6 +22,13 @@ const Projects = () => {
       image: contact_note,
       demoLink: "https://mmyat-contactlist-note.netlify.app/",
       codeLink: "https://github.com/Mmyat/LocalContact-Web",
+    },
+    {
+      title: "Movie Show",
+      description: "Movie show website to watch movies and series.",
+      image: movie_show,
+      demoLink: "https://movie-show-mm.vercel.app/",
+      codeLink: "https://github.com/Mmyat/movie-show",
     },
   ];
 

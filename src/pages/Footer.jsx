@@ -12,10 +12,10 @@ const Footer = () => {
           <div className='flex gap-1'>
             <p>@ Copyright 2023 |</p>
             <Link to="home" smooth={true} spy={true}>
-              <p className='hover:underline hover:text-green-300 cursor-pointer'>Myo Myat Zaw</p>
+              <p className='hover:underline hover:text-green-300 font-semibold cursor-pointer'>Myo Myat Zaw</p>
             </Link>
           </div>
-          <p className="hidden sm:block">Fullstack Developer</p>
+          <p className="hidden sm:block font-semibold">Fullstack Developer</p>
         </div>
       </div>
     </>

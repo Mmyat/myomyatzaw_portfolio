@@ -6,10 +6,7 @@ import { Link } from "react-scroll";
 const Home = () => {
   const {theme} = useContext(ThemeContext)
   return (
-    <div
-      className="w-full md:px-10 px-7 mt-12 py-4"
-      id="home"
-    >
+    <div className="w-full md:px-10 px-7 mt-12 py-4" id="home">
       <div className="mt-12">
         <div className="flex flex-col md:flex-row items-center w-full">
           {/* img */}

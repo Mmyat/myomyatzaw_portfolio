@@ -70,7 +70,7 @@ const Contact = () => {
             {
             social.map(social =>
               <a href={social.link} key={social.id} target="_blank" rel="noreferrer">
-              <img className="rounded-lg ml-4 hover:scale-125" 
+              <img className="rounded-lg ml-4 hover:text-[#2cb67d] hover:scale-125" 
                 style={{
                   width: "32px",
                   aspectRatio: "1/1",
