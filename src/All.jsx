@@ -7,21 +7,22 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skill from "./pages/Skill";
 import WorkExperience from "./pages/WorkExperience";
+
 const All = () => {
   return (
     <>     
-      <Header/>
-      <div className="max-w-7xl mx-auto">
-        <Home/>
-        <About/>
-        <Skill/>
-        <WorkExperience/>
-        <Projects/>
-        <Contact/>
-      </div>
-      <Footer/>
+      <Header />
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 space-y-28 md:space-y-40 pb-20 relative z-0">
+        <Home />
+        <About />
+        <Skill />
+        <WorkExperience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default All
+export default All;

@@ -1,77 +1,108 @@
-import { useState,useContext } from "react";
-import {
-  Bars3BottomRightIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
-import { Link} from "react-scroll";
-import { ThemeContext } from '../App'
+import { useState, useContext } from "react";
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-scroll";
+import { ThemeContext } from '../App';
 import profileImage from "../assets/my_icon.jpg";
+
 const Header = () => {
-  let Links = [
+  const links = [
     { name: "Home", link: "home" },
-    { name: "About me", link: "about" },
+    { name: "About", link: "about" },
     { name: "Skills", link: "skills" },
     { name: "Experience", link: "work-experience" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];
-  let [open, setOpen] = useState(false);
-  const {theme,switchTheme} = useContext(ThemeContext)
+  
+  const [open, setOpen] = useState(false);
+  const { theme, switchTheme } = useContext(ThemeContext);
+
   return (
-    <div className={`w-full ${theme === "light" ? "bg-gray-50": "bg-[#0b192e]"} fixed top-0 left-0 right-0 z-10 shadow-md rounded-b-lg`}>
-      <div className="flex md:flex items-center justify-between py-4 md:px-10 px-2">
-        {/* logo section */}
-        <div className="order-first font-bold text-2xl cursor-pointer flex items-center gap-1">
-          <img src={profileImage} alt="Profile Picture" className="text-white rounded-full w-12 h-12 mr-1 border-1"/>
-          <span className="text-[#2cb67d]">Myo Myat Zaw</span>
+    <header className="w-full glass-nav fixed top-0 left-0 right-0 z-50 border-b border-slate-200/40 dark:border-slate-800/40 shadow-sm transition-all duration-300">
+      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+        
+        {/* Logo Section */}
+        <Link to="home" smooth={true} spy={true} offset={-80} className="font-bold text-xl cursor-pointer flex items-center gap-3 group">
+          <div className="relative">
+            <img 
+              src={profileImage} 
+              alt="Myo Myat Zaw" 
+              className="rounded-full w-10 h-10 object-cover border-2 border-indigo-500 group-hover:border-teal-400 transition-all duration-300"
+            />
+            <div className="absolute inset-0 rounded-full bg-indigo-500/20 animate-ping opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+          </div>
+          <span className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 font-extrabold tracking-tight bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-teal-400 transition-all duration-300">
+            Myo Myat Zaw
+          </span>
+        </Link>
+
+        {/* Desktop Navigation Links */}
+        <nav className="hidden md:flex items-center gap-8 font-medium">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              to={link.link}
+              activeClass="text-indigo-600 dark:text-teal-400 font-semibold"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              className="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-teal-400 cursor-pointer transition-colors duration-200 text-sm relative py-1 group"
+            >
+              {link.name}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 dark:bg-teal-400 group-hover:w-full transition-all duration-200"></span>
+            </Link>
+          ))}
+        </nav>
+
+        {/* Theme and Mobile Menu Actions */}
+        <div className="flex items-center gap-3">
+          {/* Theme Toggle */}
+          <button 
+            onClick={switchTheme} 
+            aria-label="Toggle Theme"
+            className="p-2.5 rounded-xl bg-slate-200/50 hover:bg-slate-200 dark:bg-slate-800/50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300/30 dark:border-slate-700/30 transition-all duration-300"
+          >
+            {theme === "dark" ? (
+              <SunIcon className="w-5 h-5 text-amber-400 animate-pulse" />
+            ) : (
+              <MoonIcon className="w-5 h-5 text-indigo-600" />
+            )}
+          </button>
+
+          {/* Mobile Menu Icon */}
+          <button
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle Menu"
+            className="p-2.5 rounded-xl md:hidden text-slate-700 dark:text-slate-300 bg-slate-200/50 hover:bg-slate-200 dark:bg-slate-800/50 dark:hover:bg-slate-800 border border-slate-300/30 dark:border-slate-700/30 transition-all duration-300"
+          >
+            {open ? <XMarkIcon className="w-5 h-5" /> : <Bars3Icon className="w-5 h-5" />}
+          </button>
         </div>
-        {/* Menu icon */}
-        <button onClick={switchTheme} className="order-2 md:order-last">
-          { theme === "dark" ?
-          (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2cb67d" className="w-6 h-6">
-            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
-          </svg>
-          ) : 
-          (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2cb67d" className="w-6 h-6">
-              <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clipRule="evenodd" />
-            </svg>
-          
-          )}
-        </button>
-        <div
-          onClick={() => setOpen(!open)}
-          className={`absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 ${theme === "light" ? "text-dark": "text-white"} `}
-        >
-          {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
-        </div>
-        {/* linke items */}
-        <ul
-          className={`md:flex md:items-center md:pb-0 absolute md:static  md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 bg-slate-400 sm:bg-transparent transition-all duration-500 ease-in ${
-            open ? "top-12" : "top-[-490px]"
+
+        {/* Mobile Navigation Drawer */}
+        <div 
+          className={`md:hidden absolute top-[72px] left-0 w-full glass-nav border-b border-slate-200/40 dark:border-slate-800/40 px-6 py-8 flex flex-col gap-6 shadow-xl transition-all duration-350 ease-in-out ${
+            open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"
           }`}
         >
-          {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 my-7 font-semibold" key={link.name}>
-        <Link
-          to={link.link}
-          activeClass="active"
-          activeStyle={{ color: "#2cb67d" }}
-          smooth={true}
-          spy={true}
-          offset={-50}
-          className={
-            `${theme === "light" ? "text-gray-900" : "text-[#ccd6f6]"} cursor-pointer duration-500`
-          }
-        >
-          {link.name}
-        </Link>
-            </li>
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              to={link.link}
+              activeClass="text-indigo-600 dark:text-teal-400 font-semibold pl-2 border-l-2 border-indigo-600 dark:border-teal-400"
+              smooth={true}
+              spy={true}
+              offset={-80}
+              onClick={() => setOpen(false)}
+              className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-teal-400 cursor-pointer font-semibold text-lg transition-all"
+            >
+              {link.name}
+            </Link>
           ))}
-        </ul>     
+        </div>
+        
       </div>
-    </div>
+    </header>
   );
 };
 
