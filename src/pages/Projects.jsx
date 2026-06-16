@@ -1,5 +1,5 @@
 import online_shop from "../assets/ecommerce_web.jpg";
-import contact_note from "../assets/contact_web.jpg";
+import shop_pos from "../assets/shop_pos.png";
 import movie_show from "../assets/movie_show.jpg";
 import ProjectCard from "../components/ProjectCard";
 import { FiFolder } from 'react-icons/fi';
@@ -7,20 +7,12 @@ import { FiFolder } from 'react-icons/fi';
 const Projects = () => {
   const projects = [
     {
-      title: "ONLINE SHOP",
-      description: "Online shop website to buy clothes, jewelry, and electronic accessories.",
-      image: online_shop,
-      demoLink: "https://mmyat-online-shop.netlify.app/",
-      codeLink: "https://github.com/Mmyat/ecommerce_app",
-      tags: ["React", "Redux", "Tailwind CSS", "FakeStore API"]
-    },
-    {
-      title: "CONTACTLIST NOTE",
-      description: "Contact note website to note details of friends and family, stored locally.",
-      image: contact_note,
-      demoLink: "https://mmyat-contactlist-note.netlify.app/",
-      codeLink: "https://github.com/Mmyat/LocalContact-Web",
-      tags: ["React", "Local Storage", "CSS Modules", "Context API"]
+      title: "SHOP POS",
+      description: "Point of sale system for managing sales and inventory.",
+      image: shop_pos,
+      demoLink: "https://shop-pos-sigma.vercel.app/",
+      codeLink: "https://github.com/Mmyat/shop_pos",
+      tags: ["Go", "PostgreSQL", "React", "Tailwind CSS", "Tauri"]
     },
     {
       title: "Movie Show",
@@ -29,6 +21,14 @@ const Projects = () => {
       demoLink: "https://movie-show-mm.vercel.app/",
       codeLink: "https://github.com/Mmyat/movie-show",
       tags: ["React", "Tailwind CSS", "TMDB API", "Framer Motion"]
+    },
+    {
+      title: "ONLINE SHOP",
+      description: "Online shop website to buy clothes, jewelry, and electronic accessories.",
+      image: online_shop,
+      demoLink: "https://mmyat-online-shop.netlify.app/",
+      codeLink: "https://github.com/Mmyat/ecommerce_app",
+      tags: ["React", "Redux", "Tailwind CSS", "FakeStore API"]
     },
   ];
 

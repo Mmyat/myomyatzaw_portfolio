@@ -33,9 +33,9 @@ const WorkExperience = () => {
         "Real-Time & Identity Integration: Architected real-time chat applications utilizing Socket.io and securely integrated multi-provider social authentication (Google, Facebook, Line).",
         "AI & Feature Innovation: Spearheaded the technical architecture and development of an AI-integrated chatbot system to enhance interactive platform capabilities.",
         "Application Dashboards & Automation: Built and maintained complex frontend interfaces and internal systems, including a Patient Management System, Game Admin Tools, the MM Guitar App dashboard, and the Akarizan AI automation multi-platform chatbot.",
-        "Game Systems Development: Programmed game-based logic and system architectures, delivering operational features for Game Promotion Quests using the Cocos Creator game engine."
+        "Game Systems Development: Programmed game-based logic and system architectures, delivering operational features for Game Promotion Quests."
       ],
-      tags: ["Node.js", "Express.js", "Moleculer Framework", "Socket.io", "AI Integration", "React.js", "Cocos Creator"]
+      tags: ["Node.js", "Express.js", "Moleculer Framework", "Socket.io", "AI Integration", "React.js"]
     },
     {
       id: 3,

@@ -2,14 +2,14 @@ import { useState, useContext } from "react";
 import { ThemeContext } from '../App';
 import SkillCard from '../components/SkillCard';
 import { 
-  SiJavascript, SiTypescript, SiHtml5, SiCss3, SiGo, SiRust,
+  SiJavascript, SiTypescript, SiHtml5, SiCss3, SiGo,
   SiReact, SiNextdotjs, SiRedux, SiTauri, SiTailwindcss, SiAntdesign, SiBootstrap,
   SiBun, SiExpress, SiNestjs,
   SiPostgresql, SiMysql, SiMongodb, SiRedis,
   SiGithub, SiDocker, SiSocketdotio, SiGithubactions, SiGit
 } from "react-icons/si";
 import { FaGamepad, FaNodeJs } from "react-icons/fa";
-import { FiZap, FiLayers, FiActivity, FiCpu } from "react-icons/fi";
+import { FiZap, FiLayers, FiActivity, FiCpu, FiLayout } from "react-icons/fi";
 import { TbDatabase } from "react-icons/tb";
 
 const Skill = () => {
@@ -32,7 +32,6 @@ const Skill = () => {
     { name: "HTML5", category: "languages", icon: <SiHtml5 className="text-orange-500" />, level: "Advanced" },
     { name: "CSS3", category: "languages", icon: <SiCss3 className="text-blue-400" />, level: "Advanced" },
     { name: "Go (Gin)", category: "languages", icon: <SiGo className="text-cyan-400" />, level: "Growing" },
-    { name: "Rust", category: "languages", icon: <SiRust className="text-orange-500 dark:text-orange-400" />, level: "Growing" },
 
     // Frontend & Desktop
     { name: "React.js", category: "frontend", icon: <SiReact className="text-sky-400" />, level: "Advanced" },
@@ -40,9 +39,9 @@ const Skill = () => {
     { name: "Redux", category: "frontend", icon: <SiRedux className="text-purple-500" />, level: "Advanced" },
     { name: "Tauri", category: "frontend", icon: <SiTauri className="text-blue-400" />, level: "Intermediate" },
     { name: "Tailwind CSS", category: "frontend", icon: <SiTailwindcss className="text-cyan-400" />, level: "Advanced" },
+    { name: "Shadcn UI", category: "frontend", icon: <FiLayout className="text-slate-900 dark:text-slate-100" />, level: "Advanced" },
     { name: "Ant Design", category: "frontend", icon: <SiAntdesign className="text-red-500" />, level: "Advanced" },
     { name: "Bootstrap", category: "frontend", icon: <SiBootstrap className="text-purple-600" />, level: "Intermediate" },
-    { name: "Cocos Creator", category: "frontend", icon: <FaGamepad className="text-emerald-400" />, level: "Intermediate" },
 
     // Backend & Runtimes
     { name: "Node.js", category: "backend", icon: <FaNodeJs className="text-green-500" />, level: "Advanced" },

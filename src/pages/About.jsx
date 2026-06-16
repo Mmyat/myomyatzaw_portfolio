@@ -28,7 +28,7 @@ const About = () => {
             I am a passionate and highly adaptable Full-Stack Software Developer with proven experience building scalable web and desktop applications, designing robust backend microservices, and implementing automated testing frameworks.
           </p>
           <p>
-            Proficient across a modern JavaScript/TypeScript ecosystem with growing technical expertise in high-performance languages like Go and Rust. I'm a dedicated self-starter adept at database optimization, secure input handling, and rapid feature delivery within fast-paced development environments.
+            Proficient across a modern JavaScript/TypeScript ecosystem with growing technical expertise in high-performance languages like Go. I'm a dedicated self-starter adept at database optimization, secure input handling, and rapid feature delivery within fast-paced development environments.
           </p>
           <p>
             From engineering specialized Donation Management Modules featuring strict multi-currency conversion logic to architecting real-time chat applications using Socket.io, I enjoy bridging user-centric frontends with stable, high-performance backends.

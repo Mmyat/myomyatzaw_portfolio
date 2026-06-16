@@ -29,7 +29,7 @@ const Home = () => {
                 strings: [
                   "Full-Stack Software Developer 🌐",
                   "Microservices & API Developer ⚡",
-                  "Go, Rust & TypeScript Enthusiast 🚀",
+                  "Go & TypeScript Enthusiast 🚀",
                   "Backend & System Optimizer ⚙️",
                 ],
                 delay: 70,
@@ -71,7 +71,7 @@ const Home = () => {
             <div className="absolute inset-2 bg-gradient-to-bl from-teal-400 to-indigo-500 rounded-3xl opacity-30 animate-spin [animation-duration:15s] group-hover:opacity-60 transition-opacity duration-300"></div>
 
             {/* Profile Frame */}
-            <div className="relative w-[calc(100%-12px)] h-[calc(100%-12px)] bg-slate-900 rounded-3xl overflow-hidden border border-white/10 p-1.5 flex items-center justify-center">
+            <div className="relative w-[calc(100%-12px)] h-[calc(100%-12px)] bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 p-1.5 flex items-center justify-center">
               <img 
                 src={me} 
                 className="w-full h-full object-cover rounded-2xl filter grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-102" 

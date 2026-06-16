@@ -26,7 +26,7 @@ const Contact = () => {
       name: "LinkedIn",
       username: "Myo Myat Zaw",
       icon: <FiLinkedin />,
-      link: "https://www.linkedin.com/in/myo-myatzaw-92a795182/",
+      link: "https://www.linkedin.com/in/myo-myat-zaw-92a795182/",
       color: "hover:bg-[#0a66c2] hover:text-white",
     },
     {
@@ -59,20 +59,35 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
 
-    emailjs.sendForm('service_h00z8g8', 'template_jn2y1nk', form.current, '9WdP69qN8ZkGq1S5n')
+    // We use emailjs.send with a custom object that includes all common variable names
+    // so that it matches whatever is in your EmailJS template (e.g. {{from_name}}, {{reply_to}}, {{name}} etc.)
+    const templateParams = {
+      from_name: form.current.name.value,
+      name: form.current.name.value,
+      reply_to: form.current.email.value,
+      from_email: form.current.email.value,
+      email: form.current.email.value,
+      message: form.current.message.value,
+    };
+
+    emailjs.send(
+      import.meta.env.VITE_EMAIL_SERVICEID,
+      import.meta.env.VITE_EMAIL_TEMPLATEID,
+      templateParams,
+      import.meta.env.VITE_EMAIL_PUBLICKEY
+    )
       .then((result) => {
-        console.log(result.text);
+        console.log("message sent:", result.text);
         setStatus("success");
+        e.target.reset();
         setTimeout(() => setStatus(""), 5000);
       }, (error) => {
         console.log(error.text);
         setStatus("error");
         setTimeout(() => setStatus(""), 5000);
       });
-      
-    e.target.reset();
   };
-
+  
   return (
     <section id="contact" className="w-full py-4 select-none">
       
