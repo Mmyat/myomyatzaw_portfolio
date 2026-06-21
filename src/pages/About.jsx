@@ -75,7 +75,7 @@ const About = () => {
                 <span className="block text-xs text-slate-500 dark:text-slate-400">2017 – 2020</span>
                 <span className="font-semibold block text-slate-800 dark:text-slate-200">B.E. in Electronic Engineering</span>
                 <span className="text-sm text-slate-600 dark:text-slate-400 block">Technological University (Monywa)</span>
-                <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 font-medium text-slate-600 dark:text-slate-400">4th Year Completed</span>
+                <span className="inline-block mt-1 text-xs px-2.5 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 font-medium text-slate-600 dark:text-slate-400">4th Year Attended</span>
               </div>
             </div>
             

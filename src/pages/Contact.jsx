@@ -38,14 +38,6 @@ const Contact = () => {
       color: "hover:bg-[#0088cc] hover:text-white",
     },
     {
-      id: 4,
-      name: "Facebook",
-      username: "Myo Myat",
-      icon: <FiFacebook />,
-      link: "https://www.facebook.com/myo.myat.31542841/",
-      color: "hover:bg-[#1877f2] hover:text-white",
-    },
-    {
       id: 5,
       name: "Email",
       username: "mmyathaha@gmail.com",

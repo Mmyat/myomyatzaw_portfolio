@@ -9,7 +9,7 @@ const WorkExperience = () => {
     {
       id: 1,
       dateRange: "Aug 2025 – Present",
-      position: "Full-Stack Software Developer",
+      position: "Full Stack Software Developer",
       companyName: "Intellivale",
       companySite: "https://intellivale.com/", // Placeholder or general link
       icon: <FiCode className="text-indigo-500" />,
@@ -24,7 +24,7 @@ const WorkExperience = () => {
     {
       id: 2,
       dateRange: "Feb 2024 – Jul 2025",
-      position: "Full Stack Developer",
+      position: "Junior Full Stack Web Developer",
       companyName: "Studio AMK Pte. Ltd.",
       companySite: "https://www.studioamk.com/",
       icon: <FiCpu className="text-teal-500" />,

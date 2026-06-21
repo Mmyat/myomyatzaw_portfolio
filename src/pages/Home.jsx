@@ -1,4 +1,4 @@
-import me from "../assets/me.png";
+import profilePhoto from "../assets/my_profile.png";
 import { useContext } from "react";
 import { ThemeContext } from '../App';
 import Typewriter from "typewriter-effect";
@@ -20,7 +20,7 @@ const Home = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-slate-900 dark:text-white leading-none">
-            Hi, I'm <span className="gradient-text">Myo Myat Zaw</span>
+            Hi, I'm <span className="gradient-text block tracking-wider">Myo Myat Zaw</span>
           </h1>
 
           <h2 className="text-xl sm:text-2xl font-bold text-slate-700 dark:text-slate-300 min-h-[40px] mb-6">
@@ -41,7 +41,7 @@ const Home = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl leading-relaxed">
-            Passionate and highly adaptable developer with proven experience building scalable web and desktop applications, designing robust backend microservices, and implementing automated testing frameworks.
+            Passionate and highly adaptable developer with proven experience building scalable web and desktop applications, designing robust backend microservices, and developing backend solutions.
           </p>
 
           {/* Action Buttons */}
@@ -73,8 +73,8 @@ const Home = () => {
             {/* Profile Frame */}
             <div className="relative w-[calc(100%-12px)] h-[calc(100%-12px)] bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 p-1.5 flex items-center justify-center">
               <img 
-                src={me} 
-                className="w-full h-full object-cover rounded-2xl filter grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-102" 
+                src={profilePhoto} 
+                className="w-full h-full object-cover rounded-2xl filter transition-all duration-500 group-hover:scale-102" 
                 alt="Myo Myat Zaw Profile" 
               />
             </div>
